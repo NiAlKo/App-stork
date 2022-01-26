@@ -1,0 +1,143 @@
+// /*!=================-SIDEBAR-=================!*/
+.main-nav-panel {
+  position: fixed;
+  background: $bg-sidebar;
+  min-height: 100vh;
+  min-width: 243px;
+  top: 0;
+  left: 0;
+  padding: 15.6px 15.6px 27.42px 17.5px;
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    padding: 15.6px;
+    margin: 0px 0px 23.33px 0px;
+  }
+
+  &__main-nav {
+    flex-grow: 1;
+  }
+  &__btn-settings-wrap {
+    border: 0.972222px solid $border-settings;
+    border-radius: 7.77778px;
+    width: 100%;
+    padding: 7.79px 0px;
+  }
+  &__btn-settings-wrap:hover {
+    border-color: $light-alfa;
+    .btn-settings {
+      color: $light;
+    }
+  }
+}
+
+.main-nav {
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.972222px;
+    background-color: $line-nav;
+  }
+
+  // &__item:nth-last-child(2)::after {
+  //   content: "";
+  //   // display: block;
+  //   // width: 100%;
+  //   border: 1px solid $line-nav; // padding: 9.72px 0px 9.72px * 2 0px;
+  // }
+
+  &__item--active,
+  &__item {
+    position: relative;
+  }
+
+  &__item--active,
+  &__item:hover {
+    .main-nav {
+      &__link {
+        color: $light;
+      }
+      &__indicator {
+        content: "";
+        position: absolute;
+        right: 0;
+        display: block;
+        background-color: $light;
+        width: 1.94px;
+        height: 19.44px;
+        border-radius: 1.94444px;
+      }
+    }
+  }
+
+  .main-nav__item.main-nav__item--active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: block;
+    background-color: $light;
+    width: 1.94px;
+    height: 19.44px;
+    border-radius: 1.94444px;
+  }
+
+  &__link {
+    padding: 9.72px 0px 9.445px 0px;
+  }
+
+  &__dashboard,
+  &__store,
+  &__products,
+  &__catalogs,
+  &__market {
+    width: 19.44px;
+    height: 19.44px;
+    padding: 9.72px;
+    margin: 0px 11.67px 0px 15.56px;
+  }
+  &__dashboard {
+    background: url(../img/sidebar/dashboard.svg) no-repeat center;
+  }
+
+  &__store {
+    background: url(../img/sidebar/store.svg) no-repeat center;
+  }
+
+  &__products {
+    background: url(../img/sidebar/products.svg) no-repeat center;
+  }
+
+  &__catalogs {
+    background: url(../img/sidebar/digital-catalogs.svg) no-repeat center;
+  }
+
+  &__market {
+    background: url(../img/sidebar/market.svg) no-repeat center;
+  }
+}
+
+.btn-settings {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $light-alfa;
+  padding: 0px;
+
+  &__icon {
+    width: 19.44px;
+    height: 19.44px;
+    padding: 9.72px;
+    margin: 0px 11.67px 0px 15.56px;
+    background: url(../img/sidebar/settings.svg) no-repeat center;
+  }
+}

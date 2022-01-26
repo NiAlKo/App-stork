@@ -1,4 +1,87 @@
 /**======================-HEADER-=================*/
+.page-header {
+  &__title {
+  }
+}
+
+.user-nav {
+  &__list {
+  }
+
+  &__list--main {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__list--user {
+  }
+
+  &__item--dropdown {
+  }
+
+  &__link--user {
+  }
+
+  &__avatar {
+  }
+
+  &__username {
+  }
+
+  &__status {
+  }
+
+  &__list--settings {
+  }
+}
+
+// .icon-menu {
+//   display: none;
+//   position: fixed;
+//   top: 35px;
+//   right: 10px;
+//   width: 30px;
+//   height: 18px;
+//   cursor: pointer;
+//   z-index: 5;
+//   span {
+//     transition: all 0.3s ease 0s;
+//     top: 8px;
+//     right: 0px;
+//     position: absolute;
+//     width: 100%;
+//     height: 1.5px;
+//     background-color: $text-bold;
+//     &:first-child {
+//       top: 0px;
+//       width: 50%;
+//     }
+//     &:last-child {
+//       top: auto;
+//       bottom: 0px;
+//       width: 80%;
+//     }
+//   }
+//   &.active {
+//     span {
+//       transform: scale(0);
+//       background-color: $light;
+//       &:first-child {
+//         transform: rotate(-45deg);
+//         top: 8px;
+//       }
+//       &:last-child {
+//         transform: rotate(45deg);
+//         bottom: 8px;
+//       }
+//     }
+//   }
+// }
+
 /*
 .header-menu__icon {
   display: block;

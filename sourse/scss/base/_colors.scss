@@ -9,7 +9,9 @@ $border-btn: rgba(255, 255, 255, 0.08);
 $text: #808191;
 $text-bold: #1b1d21;
 $light: #ffffff;
+$light-alfa: rgba($light, 0.4);
 
+$border-settings: rgba(255, 255, 255, 0.08);
 $bar: #6c5dd3;
 $green: #53d86a;
 $orang: #fe9526;
@@ -23,16 +25,12 @@ $blue: #167ffc;
 .card-value {
   color: $text-bold;
 }
-.status {
+.status,
+.link-page {
   color: $text;
 }
 .link-nav {
-  color: $light;
-  opacity: 0.4;
-}
-
-.link-nav:active {
-  opacity: 1;
+  color: $light-alfa;
 }
 
 .link-page:active {

@@ -1,18 +1,22 @@
 // /**======================-МИКСИНЫ-=================*/
 @import "./base/settings";
 // **======================-ШРИФТЫ-=================*/
-
+@import "./base/fonts";
 /**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
 
 /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
-@import "./base/typography";
 $font-family: "Inter", sans-serif;
+
+//**======================-ОБНУЛЕНИЕ-=================*/
+$min-width: 320px;
+@import "./base/reset";
+
 //**======================-ПЕРЕМЕННЫЕ-=================*/
 @import "./base/colors";
+@import "./base/typography";
 
-$min-width: 320px;
-//**======================-ОБНУЛЕНИЕ, ОБЩИЕ_ПАРАМЕТРЫ-=================*/
-@import "./base/reset";
+//**======================-ОБЩИЕ_ПАРАМЕТРЫ-=================*/
+
 body {
   background-color: $bg;
   color: $text;
@@ -26,14 +30,11 @@ body {
 
 //**======================-УПАКОВКА-=================*/
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 //**======================-ОСНОВНАЯ_СЕТКА-=================*/
 .container {
-  // max-width: 1046px;
+  max-width: 1187px;
+  // 1187px;74.1875rem
   padding: 0px 15px;
   margin: 0 auto;
   // box-sizing: content-box;
@@ -56,5 +57,6 @@ body {
 
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
+@import "./section/sidebar";
 @import "./section/graph";
 @import "./section/footer";
