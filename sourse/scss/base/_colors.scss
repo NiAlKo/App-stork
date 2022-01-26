@@ -1,0 +1,40 @@
+// /*!=================-COLORS-=================!*/
+$bg-sidebar: linear-gradient(180deg, #181053 -21.94%, #301840 17.1%, #3f033b 62.89%, #592635 110.93%);
+$bg: #f8fafc;
+
+$line-graph: #e6e8ec;
+$line-nav: rgba(230, 232, 236, 0.06);
+$border-btn: rgba(255, 255, 255, 0.08);
+
+$text: #808191;
+$text-bold: #1b1d21;
+$light: #ffffff;
+
+$bar: #6c5dd3;
+$green: #53d86a;
+$orang: #fe9526;
+$yellow: #ffcb2f;
+$blue: #167ffc;
+
+.h1,
+.h2,
+.user-name,
+.legend-price-value,
+.card-value {
+  color: $text-bold;
+}
+.status {
+  color: $text;
+}
+.link-nav {
+  color: $light;
+  opacity: 0.4;
+}
+
+.link-nav:active {
+  opacity: 1;
+}
+
+.link-page:active {
+  color: $text-bold;
+}

@@ -1,0 +1,60 @@
+// /**======================-МИКСИНЫ-=================*/
+@import "./base/settings";
+// **======================-ШРИФТЫ-=================*/
+
+/**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
+
+/**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
+@import "./base/typography";
+$font-family: "Inter", sans-serif;
+//**======================-ПЕРЕМЕННЫЕ-=================*/
+@import "./base/colors";
+
+$min-width: 320px;
+//**======================-ОБНУЛЕНИЕ, ОБЩИЕ_ПАРАМЕТРЫ-=================*/
+@import "./base/reset";
+body {
+  background-color: $bg;
+  color: $text;
+
+  @media (max-width: 767px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+//**======================-УПАКОВКА-=================*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+//**======================-ОСНОВНАЯ_СЕТКА-=================*/
+.container {
+  // max-width: 1046px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  // box-sizing: content-box;
+}
+
+// responsive images
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+//**======================-НЕЗАВИСИМЫЕ_БЛОКИ-=================*/
+
+//**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
+@import "./section/header";
+@import "./section/graph";
+@import "./section/footer";

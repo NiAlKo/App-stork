@@ -1,0 +1,92 @@
+// /*!=================-TYPOGRAPHY-=================!*/
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.h1,
+.card-value {
+  font-family: "Poppins", sans-serif;
+}
+.h1 {
+  font-weight: 600;
+  @include adaptive-text(1.1, 0.5, 1.4583125);
+  line-height: 133%;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 0.972225rem;
+  line-height: 150%;
+}
+
+.link-nav,
+.status,
+.card-name {
+  font-size: 0.72916875rem;
+  line-height: 167%;
+}
+.link-nav,
+.card-name {
+  font-weight: 500;
+}
+
+.user-name,
+.legend-price-value,
+.months {
+  font-size: 0.85069375rem;
+  line-height: 171%;
+}
+
+.user-name,
+.legend-price-value {
+  font-weight: 600;
+}
+.status {
+  font-weight: 400;
+}
+.card-value {
+  font-weight: 500;
+  @include adaptive-text(1.2, 1.1, 1.94444375);
+  line-height: 151%;
+  letter-spacing: -0, 015625em;
+}
+
+.months {
+  font-weight: 400;
+}

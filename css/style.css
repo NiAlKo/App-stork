@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
+/**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.h1,
+.card-value {
+  font-family: "Poppins", sans-serif;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: clamp(1.1rem, 0.5vw + 1rem, 1.45831rem);
+  line-height: 133%;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 0.972225rem;
+  line-height: 150%;
+}
+
+.link-nav,
+.status,
+.card-name {
+  font-size: 0.72916875rem;
+  line-height: 167%;
+}
+
+.link-nav,
+.card-name {
+  font-weight: 500;
+}
+
+.user-name,
+.legend-price-value,
+.months {
+  font-size: 0.85069375rem;
+  line-height: 171%;
+}
+
+.user-name,
+.legend-price-value {
+  font-weight: 600;
+}
+
+.status {
+  font-weight: 400;
+}
+
+.card-value {
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1.1vw + 1rem, 1.94444rem);
+  line-height: 151%;
+  letter-spacing: -0, 015625em;
+}
+
+.months {
+  font-weight: 400;
+}
+
+.h1,
+.h2,
+.user-name,
+.legend-price-value,
+.card-value {
+  color: #1b1d21;
+}
+
+.status {
+  color: #808191;
+}
+
+.link-nav {
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+.link-nav:active {
+  opacity: 1;
+}
+
+.link-page:active {
+  color: #1b1d21;
+}
+
+/*!=================RESET=================!*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Выставляем дефолтное значения для возможности корректно использовать единицы em, rem*/
+html {
+  font-size: 16px;
+}
+
+/** Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Inter", sans-serif;
+}
+
+/** Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/** Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/** Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/** Для элементов a, у которых есть класс, убираем подчеркивание*/
+a[class] {
+  text-decoration: none;
+}
+
+/** Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/** Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/** Наследуем шрифты для инпутов и кнопок*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #808191;
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**======================-HEADER-=================*/
+/*
+.header-menu__icon {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 5;
+  span {
+    transition: all 0.3s ease 0s;
+    top: 8px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    &:first-child {
+      top: 0px;
+    }
+    &:last-child {
+      top: auto;
+      bottom: 0px;
+    }
+  }
+  &.active {
+    span {
+			transform: scale(0);
+      &:first-child {
+        transform: rotate(-45deg);
+        top: 8px;
+      }
+      &:last-child {
+        transform: rotate(45deg);
+        bottom: 8px;
+      }
+    }
+  }
+}
+
+*/
+/**======================-FOOTER-=================*/
