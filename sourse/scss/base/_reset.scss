@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: all 0.4s linear;
 }
 /** Выставляем дефолтное значения для возможности корректно использовать единицы em, rem*/
 html {

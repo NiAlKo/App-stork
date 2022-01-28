@@ -32,6 +32,9 @@ $maxWidthContainer: size;
 @mixin adaptive-text($minSizeRem, $vw, $maxRem) {
   font-size: clamp($minSizeRem + rem, $vw + vw + (" + " +1rem), $maxRem + rem);
 }
+@mixin adaptive-param($property, $minSizeRem, $vw, $maxRem) {
+  $property: clamp($minSizeRem + rem, $vw + vw + (" + " +23.7rem), $maxRem + rem);
+}
 // Сonversion to other units
 // To %
 // @function prc($pxOne, $pxTwo) {

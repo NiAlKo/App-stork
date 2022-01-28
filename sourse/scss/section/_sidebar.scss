@@ -1,19 +1,39 @@
 // /*!=================-SIDEBAR-=================!*/
 .main-nav-panel {
-  position: fixed;
   background: $bg-sidebar;
   min-height: 100vh;
-  min-width: 243px;
-  top: 0;
-  left: 0;
+  min-width: 17.361%;
+  flex: 1 0 17.361%;
   padding: 15.6px 15.6px 27.42px 17.5px;
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  z-index: 10;
+  @media (max-width: 650px) {
+    position: fixed;
+  }
   &__logo {
     padding: 15.6px;
     margin: 0px 0px 23.33px 0px;
   }
-
+  &__logo {
+    &.active {
+      margin-bottom: 10px;
+      padding: 0px;
+    }
+  }
+  &__logo--big {
+    &.active {
+      display: none;
+    }
+  }
+  &__logo--mini {
+    display: none;
+    &.active {
+      display: inline;
+      min-width: 30px;
+    }
+  }
   &__main-nav {
     flex-grow: 1;
   }
@@ -31,6 +51,9 @@
   }
 }
 
+.main-nav-panel.active * {
+  font-size: 0;
+}
 .main-nav {
   &__list {
   }
@@ -48,13 +71,6 @@
     height: 0.972222px;
     background-color: $line-nav;
   }
-
-  // &__item:nth-last-child(2)::after {
-  //   content: "";
-  //   // display: block;
-  //   // width: 100%;
-  //   border: 1px solid $line-nav; // padding: 9.72px 0px 9.72px * 2 0px;
-  // }
 
   &__item--active,
   &__item {
@@ -125,7 +141,33 @@
     background: url(../img/sidebar/market.svg) no-repeat center;
   }
 }
-
+.main-nav.active {
+  .main-nav__list {
+    margin-top: 40px;
+  }
+  .main-nav__item:not(:last-child) {
+    padding: 0px 0px 15px 0px;
+  }
+  .main-nav__item::before {
+    display: none;
+  }
+  .main-nav__item--active,
+  .main-nav__item:hover {
+    .main-nav__indicator {
+      display: none;
+    }
+  }
+  .main-nav__item.main-nav__item--active::before {
+    display: none;
+  }
+  .main-nav__dashboard,
+  .main-nav__store,
+  .main-nav__products,
+  .main-nav__catalogs,
+  .main-nav__market {
+    margin: 0px;
+  }
+}
 .btn-settings {
   border: none;
   outline: none;
@@ -139,5 +181,17 @@
     padding: 9.72px;
     margin: 0px 11.67px 0px 15.56px;
     background: url(../img/sidebar/settings.svg) no-repeat center;
+  }
+}
+.main-nav-panel.active {
+  min-width: 6%;
+  flex: 0 0 6%;
+  padding: 15.6px 10px 27.42px 10px;
+  text-align: center;
+  .main-nav-panel__btn-settings-wrap {
+    border: none;
+  }
+  .btn-settings__icon {
+    margin: 0px;
   }
 }

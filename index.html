@@ -8,163 +8,188 @@
     <title>Stork</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
-        <h1 class="page-header__title h1">Dashboard</h1>
-        <div class="icon-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="user-nav">
-          <ul class="user-nav__list user-nav__list--main">
-            <li class="user-nav__item"><a class="user-nav__link" href="#"></a></li>
-            <li class="user-nav__item"><a class="user-nav__link" href="#"></a></li>
-          </ul>
-          <ul class="user-nav__list user-nav__list--user">
-            <li class="user-nav__item user-nav__item--dropdown">
-              <a class="user-nav__link user-nav__link--user" href="#">
-                <img class="user-nav__avatar" src="img/user/avatar/avatar.png" alt="Happy User" width="47" height="47" />
-                <span class="user-nav__username user-name">Happy User</span>
+    <div class="wrapper">
+      <!-- ? 17% window  sidebar -->
+      <div class="main-nav-panel">
+        <nav class="main-nav-panel__main-nav main-nav">
+          <div class="main-nav-panel__logo">
+            <img class="main-nav-panel__logo--big" src="img/sidebar/logo.svg" alt="logo stork." width="82" height="24" />
+            <img class="main-nav-panel__logo--mini" src="img/sidebar/logo-mini.svg" alt="logo stork." width="24" height="24" />
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="#" class="main-nav__link link-nav">
+                <span class="main-nav__dashboard"></span>
+                Dashboard
               </a>
-              <a class="user-nav__link user-nav__status status">Loggy Fog</a>
-              <ul class="user-nav__list user-nav__list--settings">
-                <li class="user-nav__item"><a class="user-nav__link link-nav" href="#">lorem</a></li>
-                <li class="user-nav__item"><a class="user-nav__link link-nav" href="#">lorem</a></li>
-                <li class="user-nav__item"><a class="user-nav__link link-nav" href="#">lorem</a></li>
-              </ul>
+              <span class="main-nav__indicator"></span>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link-nav">
+                <span class="main-nav__store"></span>
+                Stork Store
+              </a>
+              <span class="main-nav__indicator"></span>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link-nav">
+                <span class="main-nav__products"></span>
+                Products
+              </a>
+              <span class="main-nav__indicator"></span>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link-nav">
+                <span class="main-nav__catalogs"></span>
+                Digital Catalogs
+              </a>
+              <span class="main-nav__indicator"></span>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link link-nav">
+                <span class="main-nav__market"></span>
+                Stork Market
+              </a>
+              <span class="main-nav__indicator"></span>
             </li>
           </ul>
+        </nav>
+        <div class="main-nav-panel__btn-settings-wrap">
+          <button class="btn-settings link-nav" type="button">
+            <span class="btn-settings__icon"></span>
+            Settings
+          </button>
         </div>
       </div>
-    </header>
-
-    <aside class="main-nav-panel">
-      <nav class="main-nav-panel__main-nav main-nav">
-        <div class="main-nav-panel__logo">
-          <img src="img/sidebar/logo.svg" alt="logo stork" />
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="#" class="main-nav__link link-nav">
-              <span class="main-nav__dashboard"></span>
-              Dashboard
-            </a>
-            <span class="main-nav__indicator"></span>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link link-nav">
-              <span class="main-nav__store"></span>
-              Stork Store
-            </a>
-            <span class="main-nav__indicator"></span>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link link-nav">
-              <span class="main-nav__products"></span>
-              Products
-            </a>
-            <span class="main-nav__indicator"></span>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link link-nav">
-              <span class="main-nav__catalogs"></span>
-              Digital Catalogs
-            </a>
-            <span class="main-nav__indicator"></span>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link link-nav">
-              <span class="main-nav__market"></span>
-              Stork Market
-            </a>
-            <span class="main-nav__indicator"></span>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-nav-panel__btn-settings-wrap">
-        <button class="btn-settings link-nav" type="button">
-          <span class="btn-settings__icon"></span>
-          Settings
-        </button>
-      </div>
-    </aside>
-    <main class="page container">
-      <div class="page-nav">
-        <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="#" class="page-nav__link link-page">Last week</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link link-page">Last month</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link link-page">Last year</a></li>
-        </ul>
-      </div>
-      <div class="page-wrap">
-        <div class="financial-indicators">
-          <div class="financial-indicators__body">
-            <ul class="financial-indicators__cards">
-              <li class="financial-indicators__item">
-                <span class="financial-indicators__icon"></span>
-                <p class="financial-indicators__text card-name">Number of sales</p>
-                <span class="financial-indicators__value card-value">47</span>
-              </li>
-              <li class="financial-indicators__item">
-                <span class="financial-indicators__icon"></span>
-                <p class="financial-indicators__text card-name">Total Revenue</p>
-                <span class="financial-indicators__value card-value">&#36;1 410</span>
-              </li>
-              <li class="financial-indicators__item">
-                <span class="financial-indicators__icon"></span>
-                <p class="financial-indicators__text card-name">Net profit</p>
-                <span class="financial-indicators__value card-value">&#36;1 091</span>
-              </li>
-              <li class="financial-indicators__item">
-                <span class="financial-indicators__icon"></span>
-                <p class="financial-indicators__text card-name">AOV</p>
-                <span class="financial-indicators__value card-value">&#36;124</span>
-              </li>
-              <li class="financial-indicators__item">
-                <span class="financial-indicators__icon"></span>
-                <p class="financial-indicators__text card-name">Refunds</p>
-                <span class="financial-indicators__value card-value">&#36;6 296</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section class="sales-report">
-          <h2 class="sales-report__title h2">Sales Report</h2>
-          <div class="sales-report__sales-schedule sales-schedule">
-            <div class="sales-schedule__body">
-              <div class="sales-schedule__legend legend-price">
-                <ul class="legend-price__list legend-price-value">
-                  <li class="legend-price__item">100k</li>
-                  <li class="legend-price__item">80k</li>
-                  <li class="legend-price__item">60k</li>
-                  <li class="legend-price__item">40k</li>
-                  <li class="legend-price__item">20k</li>
-                  <li class="legend-price__item">0</li>
+      <!-- ? 83%  window -->
+      <div class="container">
+        <header class="page-header">
+          <div class="page-header__wrap">
+            <h1 class="page-header__title h1">Dashboard</h1>
+            <div class="icon-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- ?user-nav -->
+            <div class="user-nav">
+              <div class="user-nav__main">
+                <ul class="user-nav__list user-nav__list--main">
+                  <li class="user-nav__item"><a class="user-nav__link user-nav__link--inbox" href="#"></a></li>
+                  <li class="user-nav__item"><a class="user-nav__link user-nav__link--notificate" href="#"></a></li>
                 </ul>
               </div>
-              <div class="sales-schedule__content">
-                <div class="sales-schedule__graph" id="graph"></div>
-              </div>
-              <div class="sales-schedule__legend--bottom">
-                <ul class="legend-date__list months">
-                  <li class="legend-date__item">1 Jun</li>
-                  <li class="legend-date__item">5 Jun</li>
-                  <li class="legend-date__item">10 Jun</li>
-                  <li class="legend-date__item">15 Jun</li>
-                  <li class="legend-date__item">20 Jun</li>
-                  <li class="legend-date__item">25 Jun</li>
-                  <li class="legend-date__item">30 Jun</li>
+              <ul class="user-nav__list user-nav__list--user">
+                <li class="user-nav__item user-nav__item--user">
+                  <a class="user-nav__link user-nav__link--user" href="#">
+                    <img class="user-nav__avatar" src="img/user/avatar/avatar.png" alt="Happy User." width="47" height="47" />
+                    <div class="user-nav__user-data">
+                      <span class="user-nav__username user-name">Happy User</span>
+                      <p class="user-nav__status status">Loggy Fog</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="user-nav__item user-nav__item--dropdown">
+                  <button class="user-nav__btn-more" type="button"></button>
+                  <ul class="user-nav__list user-nav__list--settings">
+                    <li class="user-nav__item"><a class="user-nav__link--settings link-nav" href="#">lorem</a></li>
+                    <li class="user-nav__item"><a class="user-nav__link--settings link-nav" href="#">lorem</a></li>
+                    <li class="user-nav__item"><a class="user-nav__link--settings link-nav" href="#">lorem</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ?page-nav -->
+          <div class="page-nav">
+            <ul class="page-nav__list">
+              <li class="page-nav__item"><a href="#" class="page-nav__link link-page">Last week</a></li>
+              <li class="page-nav__item"><a href="#" class="page-nav__link page-nav__link--active link-page">Last month</a></li>
+              <li class="page-nav__item"><a href="#" class="page-nav__link link-page">Last year</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <main class="page">
+          <div class="page-wrap">
+            <!--?financial-indicators  -->
+            <div class="financial-indicators">
+              <div class="financial-indicators__body">
+                <ul class="financial-indicators__cards">
+                  <li class="financial-indicators__item">
+                    <div class="financial-indicators__name">
+                      <span class="financial-indicators__icon financial-indicators__icon--sales"></span>
+                      <p class="financial-indicators__text card-name">Number of sales</p>
+                    </div>
+
+                    <span class="financial-indicators__value card-value">47</span>
+                  </li>
+                  <li class="financial-indicators__item">
+                    <div class="financial-indicators__name">
+                      <span class="financial-indicators__icon financial-indicators__icon--revenue"></span>
+                      <p class="financial-indicators__text card-name">Total Revenue</p>
+                    </div>
+                    <span class="financial-indicators__value card-value">&#36;1 410</span>
+                  </li>
+                  <li class="financial-indicators__item">
+                    <div class="financial-indicators__name">
+                      <span class="financial-indicators__icon financial-indicators__icon--profit"></span>
+                      <p class="financial-indicators__text card-name">Net profit</p>
+                    </div>
+                    <span class="financial-indicators__value card-value">&#36;1 091</span>
+                  </li>
+                  <li class="financial-indicators__item">
+                    <div class="financial-indicators__name">
+                      <span class="financial-indicators__icon financial-indicators__icon--aov"></span>
+                      <p class="financial-indicators__text card-name">AOV</p>
+                    </div>
+                    <span class="financial-indicators__value card-value">&#36;124</span>
+                  </li>
+                  <li class="financial-indicators__item">
+                    <div class="financial-indicators__name">
+                      <span class="financial-indicators__icon financial-indicators__icon--refunds"></span>
+                      <p class="financial-indicators__text card-name">Refunds</p>
+                    </div>
+                    <span class="financial-indicators__value card-value">&#36;6 296</span>
+                  </li>
                 </ul>
               </div>
             </div>
-          </div>
+            <!-- ?sales-report -->
+            <section class="sales-report">
+              <h2 class="sales-report__title h2">Sales Report</h2>
+              <div class="sales-report__sales-schedule sales-schedule">
+                <div class="legend-price">
+                  <ul class="legend-price__list legend-price-value">
+                    <li class="legend-price__item">100k</li>
+                    <li class="legend-price__item">80k</li>
+                    <li class="legend-price__item">60k</li>
+                    <li class="legend-price__item">40k</li>
+                    <li class="legend-price__item">20k</li>
+                    <li class="legend-price__item">0</li>
+                  </ul>
+                </div>
+                <div class="sales-schedule__content">
+                  <div class="sales-schedule__graph" id="graph"></div>
 
-          <!-- <button class="btn-reset" onclick="updateGraph()">Update Graph</button> -->
-        </section>
+                  <div class="legend-date">
+                    <ul class="legend-date__list months">
+                      <li class="legend-date__item">1 Jun</li>
+                      <li class="legend-date__item">5 Jun</li>
+                      <li class="legend-date__item">10 Jun</li>
+                      <li class="legend-date__item">15 Jun</li>
+                      <li class="legend-date__item">20 Jun</li>
+                      <li class="legend-date__item">25 Jun</li>
+                      <li class="legend-date__item">30 Jun</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
       </div>
-    </main>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

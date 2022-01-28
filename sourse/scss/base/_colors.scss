@@ -1,10 +1,16 @@
 // /*!=================-COLORS-=================!*/
 $bg-sidebar: linear-gradient(180deg, #181053 -21.94%, #301840 17.1%, #3f033b 62.89%, #592635 110.93%);
 $bg: #f8fafc;
+$bg-avatar: #e7faff;
+$bg-link: #f9f9f9;
 
 $line-graph: #e6e8ec;
 $line-nav: rgba(230, 232, 236, 0.06);
 $border-btn: rgba(255, 255, 255, 0.08);
+
+$shadow: rgba(0, 99, 231, 0.05);
+$shadow-2: rgba(0, 99, 231, 0.06);
+$shadow-3: rgba(116, 128, 143, 0.3);
 
 $text: #808191;
 $text-bold: #1b1d21;
@@ -13,11 +19,12 @@ $light-alfa: rgba($light, 0.4);
 
 $border-settings: rgba(255, 255, 255, 0.08);
 $bar: #6c5dd3;
+$bar-light: rgba($bar, 0.12);
 $green: #53d86a;
 $orang: #fe9526;
 $yellow: #ffcb2f;
 $blue: #167ffc;
-
+$red: #fd3d39;
 .h1,
 .h2,
 .user-name,

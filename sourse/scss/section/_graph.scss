@@ -1,0 +1,72 @@
+/*!=================-SCHEDULE-=================!*/
+
+.sales-report {
+  max-width: 68.663rem;
+  background-color: $light;
+  padding: 38.89px;
+  border-radius: 38.8889px;
+  margin: 0px auto;
+  &__title {
+    padding: 0px 0px 38.89px 0px;
+  }
+
+  &__sales-schedule {
+  }
+}
+
+.sales-schedule {
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__graph {
+    height: 233.33px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__graph-bar {
+    width: 11.42px;
+    background-color: $bar-light;
+    position: relative;
+  }
+  &__graph-bar:not(:last-child) {
+    margin-right: 2.019%;
+  }
+  &__graph-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $bar;
+    border-radius: 11.6667px 11.6667px 0px 0px;
+  }
+}
+.legend-price {
+  margin: 0px 29.17px 15.55px 0px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    text-align: right;
+  }
+  &__item:not(:last-child) {
+    padding: 0px 0px 23.33px 0px;
+  }
+}
+
+.legend-date {
+  margin: 15.56px 0px 0px 0px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+  }
+}

@@ -8,7 +8,7 @@
 $font-family: "Inter", sans-serif;
 
 //**======================-ОБНУЛЕНИЕ-=================*/
-$min-width: 320px;
+$min-width: 650px;
 @import "./base/reset";
 
 //**======================-ПЕРЕМЕННЫЕ-=================*/
@@ -20,27 +20,28 @@ $min-width: 320px;
 body {
   background-color: $bg;
   color: $text;
-
-  @media (max-width: 767px) {
-    &.lock {
-      overflow: hidden;
-    }
-  }
 }
 
 //**======================-УПАКОВКА-=================*/
 .wrapper {
+  display: flex;
+  min-height: 100vh;
 }
 //**======================-ОСНОВНАЯ_СЕТКА-=================*/
 .container {
-  max-width: 1187px;
-  // 1187px;74.1875rem
-  padding: 0px 15px;
-  margin: 0 auto;
-  // box-sizing: content-box;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+
+  max-height: 100vh;
+  overflow: auto;
+  flex: 1 1 82.639%;
+  @media (max-width: 650px) {
+    margin: 0px 0px 0px 60px;
+  }
 }
 
-// responsive images
 .ibg {
   position: relative;
 }
@@ -53,10 +54,19 @@ body {
   object-fit: cover;
 }
 
+.page {
+  padding: 85.56px 0px 0px 0px;
+}
+
+.page-wrap {
+  padding: 85.56px 38.89px 0px 19.44px;
+}
+
 //**======================-НЕЗАВИСИМЫЕ_БЛОКИ-=================*/
 
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
 @import "./section/sidebar";
+@import "./section/cards";
 @import "./section/graph";
 @import "./section/footer";

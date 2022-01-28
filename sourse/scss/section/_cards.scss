@@ -1,0 +1,82 @@
+// /*!=================-СARDS-=================!*/
+
+.financial-indicators {
+  padding: 48px 0px;
+
+  @media (max-width: 1015px) {
+    margin: 0 auto;
+    max-width: 68.663rem;
+  }
+  &__body {
+  }
+
+  &__cards {
+    display: flex;
+    @media (max-width: 1015px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 23.33px;
+    background-color: $light;
+    box-shadow: 0px 1.94444px 13.6111px $shadow-2;
+    border-radius: 23.3333px;
+    white-space: nowrap;
+    flex: 0 1 20%;
+    @media (max-width: 1014px) {
+      flex: 0 1 45%;
+      margin: 7.78px 19.54px 7.78px 0px;
+      align-items: center;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media (min-width: 1015px) {
+      margin: 0px 19.54px 0px 0px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15.56px 0px;
+  }
+  &__icon {
+    width: 23.33px;
+    height: 23.33px;
+    border-radius: 7.778px;
+    margin: 0px 7.78px 0px 0px;
+
+    flex-shrink: 0;
+  }
+
+  &__icon--sales {
+    background: $green url(../img/financial-indicators/dollar.svg) no-repeat center;
+  }
+
+  &__icon--revenue {
+    background: $orang url(../img/financial-indicators/ticket-star.svg) no-repeat center;
+  }
+
+  &__icon--profit {
+    background: $yellow url(../img/financial-indicators/net-profit.svg) no-repeat center;
+  }
+
+  &__icon--aov {
+    background: $blue url(../img/financial-indicators/average-order-value.svg) no-repeat center;
+  }
+
+  &__icon--refunds {
+    background: $red url(../img/financial-indicators/refunds.svg) no-repeat center;
+  }
+
+  &__text {
+  }
+
+  &__value {
+  }
+}
